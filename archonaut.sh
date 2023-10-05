@@ -72,7 +72,6 @@ fi
 ##chroot prep 
 pacstrap /mnt base base-devel linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
-[[ -d AwesomeDots ]] && mv AwesomeDots /mnt/ ; 
 sed '5,/^#CHROOT$/d' `basename $0` > /mnt/archonaut2.sh
 chmod +x /mnt/archonaut2.sh
 arch-chroot /mnt ./archonaut2.sh
@@ -130,7 +129,6 @@ read -p "Enter username: " username
 useradd -m -G wheel -s /sbin/fish $username
 passwd $username
 
-[[ -d AwesomeDots ]] && mv AwesomeDots /home/$username/
 sed '5,/^#POST_INSTALL$/d' archonaut2.sh > /home/$username/archonaut_post_setup.sh 
 chown $username:$username /home/$username/archonaut_post_setup.sh  
 chmod +x /home/$username/archonaut_post_setup.sh 
