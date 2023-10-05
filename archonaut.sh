@@ -116,7 +116,7 @@ pacman -S --noconfirm fish git wget curl awk grep openssh libssh2 \
      dosfstools ntfs-3g pipewire pipewire-pulse pavucontrol \
      vim neovim rsync neofetch \
      jq aria2 shred \
-     dhcpcd networkmanager wpa_supplicant rsync pamixer mpd ncmpcpp \
+     dhcpcd networkmanager wpa_supplicant pamixer mpd ncmpcpp \
      xdg-user-dirs libconfig \
      alacritty newsboat awesome ly rofi firefox
 
