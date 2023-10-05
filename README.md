@@ -1,2 +1,2 @@
 # Archonaut
-Interactive Arch install script. With complete Awesomewm Rice.
+Interactive Arch install script. With complete Awesomewm Rice & blackarch repo installation. 
