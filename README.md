@@ -8,7 +8,7 @@
 </p>
 </h2>
 
-Archonaut is an interactive script to install archlinux with predefined variables based on my preference .It includes an automatic <strong>Awesomwm Rice</strong> and includes option to install <strong>BlackArch Repo</strong>.
+Archonaut is an interactive script to install archlinux with predefined variables based on my preference. It includes an automatic <strong>Awesomwm Rice</strong> and includes option to install <strong>BlackArch Repo</strong>.
 
 <h3 align=center>
   
