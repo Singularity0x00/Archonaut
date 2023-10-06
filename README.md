@@ -11,7 +11,9 @@
 Archonaut is an interactive script to install archlinux with predefined variables based on my preference .It includes an automatic <strong>Awesomwm Rice</strong> and includes option to install <strong>BlackArch Repo</strong>.
 
 <h3 align=center>
+  
 ![archonaut](https://github.com/HrideshG88/Archonaut/assets/37382537/e81f6138-9a0d-4451-9c52-5742a1ce87a7)
+  
 </h3>
 
 <h3 align=center>SETUP</h3>
