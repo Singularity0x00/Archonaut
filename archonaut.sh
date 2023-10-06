@@ -3,7 +3,7 @@ printf '\033c'
 echo -e " \033[0;31m░█▀█░█▀▄░█▀▀░█░█░█▀█░█▀█░█▀█░█░█░▀█▀ \n ░█▀█░█▀▄░█░░░█▀█░█░█░█░█░█▀█░█░█░░█░ \n ░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀▀▀░░▀░"
 echo -e "\033[1m       ARCHISO to ARCH_RICED_UP \033[0m"
 
-echo -e "Full ARCH install OR Just Rice?? \n 1:Ful_install \n 2:Rice \n Enter Choice number \033[0;31m(1/2): \033[0m"
+echo -e "Full ARCH install OR Just Rice?? \n 1:Full_install \n 2:Rice \n Enter Choice number \033[0;31m(1/2): \033[0m"
 read choice
 if [[ $choice = "2" ]] ; then 
 	sed '5,/^##Ricing_up$/d' `basename $0` > $HOME/Rice.sh 
