@@ -175,11 +175,12 @@ cp -f AwesomeDots/xinitrc $HOME/.xinitrc #startup
 mv AwesomeDots/scripts $HOME/
 chmod +x scripts/*
 cp AwesomeDots/alacrittypywal.sh $HOME/ #color alacritty with pywal
-ln -s scripts/dexplore /usr/bin/ #search web indexes
-ln -s scripts/newq /usr/bin/ #pywal wrapper/wallpaper selector
-ln -s scripts/ocean /usr/bin/ #newsboat open links
-ln -s scripts/shredder /usr/bin/ #fzf shred script
-#ln -s $HOME/scripts/fixmon /usr/bin/ #multimonitor setup
+sudo cp scripts/dexplore /usr/bin/ #search web indexes
+sudo cp scripts/newq /usr/bin/ #pywal wrapper/wallpaper selector
+sudo cp scripts/ocean /usr/bin/ #newsboat open links
+sudo cp scripts/shredder /usr/bin/ #fzf shred script
+sudo cp scripts/dnetd-cli /usr/bin/ #play Darknet-Diaries from the terminal.
+#sudo cp $HOME/scripts/fixmon /usr/bin/ #multimonitor setup
 
 read -p "Get wallpapers? (y/n): " walp
 if [[ $walp = [y,Y] ]] ; then
