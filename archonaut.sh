@@ -164,22 +164,22 @@ cd $HOME
 
 echo -e "\033[1mRicing UP!!! \033[0m"
 [[ ! -d AwesomeDots/ ]] && git clone https://github.com/HrideshG88/AwesomeDots.git ;
-rsync -avxP AwesomeDots/config/ .config/ 
+rsync -avxP AwesomeDots/config/ $HOME/.config/ 
 
 sudo cp -f AwesomeDots/config.ini /etc/ly/ #login manager
 
-git clone https://github.com/streetturtle/awesome-wm-widgets.git .config/awesome/awesome-wm-widgets #window_manager widgets
+git clone https://github.com/streetturtle/awesome-wm-widgets.git $HOME/.config/awesome/awesome-wm-widgets #window_manager widgets
 
 cp -f AwesomeDots/xinitrc $HOME/.xinitrc #startup 
 
 mv AwesomeDots/scripts $HOME/
 chmod +x scripts/*
 cp AwesomeDots/alacrittypywal.sh $HOME/ #color alacritty with pywal
-sudo cp scripts/dexplore /usr/bin/ #search web indexes
-sudo cp scripts/newq /usr/bin/ #pywal wrapper/wallpaper selector
-sudo cp scripts/ocean /usr/bin/ #newsboat open links
-sudo cp scripts/shredder /usr/bin/ #fzf shred script
-sudo cp scripts/dnetd-cli /usr/bin/ #play Darknet-Diaries from the terminal.
+sudo cp $HOME/scripts/dexplore /usr/bin/ #search web indexes
+sudo cp $HOME/scripts/newq /usr/bin/ #pywal wrapper/wallpaper selector
+sudo cp $HOME/scripts/ocean /usr/bin/ #newsboat open links
+sudo cp $HOME/scripts/shredder /usr/bin/ #fzf shred script
+sudo cp $HOME/scripts/dnetd-cli /usr/bin/ #play Darknet-Diaries from the terminal.
 #sudo cp $HOME/scripts/fixmon /usr/bin/ #multimonitor setup
 
 read -p "Get wallpapers? (y/n): " walp
