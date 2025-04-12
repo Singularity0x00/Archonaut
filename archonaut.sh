@@ -9,7 +9,7 @@ if [[ $choice = "2" ]] ; then
 	sed '5,/^##Ricing_up$/d' `basename $0` > $HOME/Rice.sh 
 	chmod +x $HOME/Rice.sh
 	/bin/bash $HOME/Rice.sh
-if
+fi
 
 #INITIAL_SETUP
 sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
